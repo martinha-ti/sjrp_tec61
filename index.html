@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0 auto;
+            /*centralizar para responsividade - posicionamento relativo*/
+            padding: 0;
+            box-sizing: border-box;
+            /* não deixa o elemento sair do lugar, ele fixa o tamanho da caixa - exemplos que vimos de border, margin e padding aumentando as dimensões do elemento*/
+        }
+
+        .main {
+            width: 60%;
+            /* height: 600px; */
+            /* background-color: #ffe4c4; */
+            position: relative;
+            border-radius: 20px;
+            border: 1px dashed #1e1e1e;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px #1e1e1e;
+            margin-bottom: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        h1,
+        h2,
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 30px;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        a {
+            color: #1e1e1e;
+        }
+
+        .topo {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            border: 1px solid #1e1e1e;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+        }
+
+        .topo_link {
+            color: #f7f7f7;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .explorar {
+            color: #1e1e1e;
+            text-decoration: none;
+        }
+
+        hr {
+            margin-bottom: 15px;
+        }
+
+
+        /* responsividade (sempre no final) máx largura é 768px */
+        @media (max-width: 768px) {
+            .main {
+                width: 95%;
+                padding: 25px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main" id="topo">
+        <h1>Complexo Swift de Educação e Cultura</h1>
+        <h2>História, cultura e arquitetura no coração de Rio Preto.</h2>
+        <p>A imagem apresenta o antigo prédio da Swift, com sua arquitetura histórica e área verde ao redor,
+            simbolizando a valorização do patrimônio cultural e dos espaços de educação, arte e convivência da cidade.
+        </p>
+        <p><img src="img/1.png" alt="S J Rio Preto"></p>
+        <p>
+            <a class="explorar" href="swift.html">Explorar Mais...</a>
+        </p>
+        <hr>
+        <h1>Parque da Represa Municipal</h1>
+        <h2>O cartão-postal verde e azul de São José do Rio Preto.</h2>
+        <p>A imagem destaca a Represa Municipal com sua paisagem ampla, arborizada e urbana ao fundo, representando um
+            dos espaços mais conhecidos da cidade para lazer, caminhada, contemplação e contato com a natureza.</p>
+        <p><img src="img/2.png" alt="S J Rio Preto"></p>
+        <p>
+            <a class="explorar" href="represa.html">Explorar Mais...</a>
+        </p>
+
+        <hr>
+        <h1>Catedral de São José</h1>
+        <h2>Tradição, fé e identidade no centro da cidade.</h2>
+        <p>A imagem mostra a Catedral de São José em destaque, com sua arquitetura imponente e praça ao redor,
+            representando um marco histórico, religioso e urbano de São José do Rio Preto.</p>
+        <p><img src="img/3.png" alt="S J Rio Preto"></p>
+        <p>
+            <a class="explorar" href="catedral.html">Explorar Mais...</a>
+        </p>
+
+        <hr>
+        <p class="topo">
+            <a class="topo_link" href="#topo">Voltar ao Topo</a>
+        </p>
+    </div>
+    <p style="text-align: center; font-size: 10px; margin-bottom: 20px;">
+        Feito com amor &hearts; | Profª Martinha 2026 &reg; | @martinha.ti
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0 auto;
+            /*centralizar para responsividade - posicionamento relativo*/
+            padding: 0;
+            box-sizing: border-box;
+            /* não deixa o elemento sair do lugar, ele fixa o tamanho da caixa - exemplos que vimos de border, margin e padding aumentando as dimensões do elemento*/
+        }
+
+        .main {
+            width: 60%;
+            /* height: 600px; */
+            /* background-color: #ffe4c4; */
+            position: relative;
+            border-radius: 20px;
+            border: 1px dashed #1e1e1e;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px #1e1e1e;
+            margin-bottom: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        h1,
+        h2,
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 30px;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        a {
+            color: #1e1e1e;
+        }
+
+        .topo {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            border: 1px solid #1e1e1e;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+        }
+
+        .topo_link {
+            color: #f7f7f7;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .explorar {
+            color: #1e1e1e;
+            text-decoration: none;
+        }
+
+        hr {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo" class="main">
+        <p>
+            <a class="explorar" href="index.html">Voltar a Home...</a>
+        </p>
+
+        <h1>Complexo Swift de Educação e Cultura</h1>
+        <h2>História, cultura e arquitetura no coração de Rio Preto.</h2>
+        <p>A imagem apresenta o antigo prédio da Swift, com sua arquitetura histórica e área verde ao redor,
+            simbolizando a valorização do patrimônio cultural e dos espaços de educação, arte e convivência da cidade.
+        </p>
+        <p><img src="img/1.png" alt="S J Rio Preto"></p>
+        <hr>
+        <!-- TEXTO 1 - COMPLEXO SWIFT -->
+
+
+
+        <p>
+            O Complexo Swift de Educação e Cultura é um dos espaços históricos mais importantes de São José do Rio
+            Preto.
+            Inaugurado na década de 1940, o local funcionava originalmente como uma indústria ligada ao armazenamento
+            e processamento de grãos, como algodão, milho e amendoim. Sua construção marcou um período em que a cidade
+            começava a fortalecer sua economia e ampliar sua presença no setor industrial.
+        </p>
+
+        <p>
+            Com o passar do tempo, o antigo espaço industrial deixou de ter apenas uma função econômica e passou a
+            representar
+            também a memória urbana da cidade. A arquitetura do prédio, suas estruturas amplas e sua localização próxima
+            à
+            Represa Municipal fazem da Swift um exemplo de patrimônio preservado. Por isso, o local é lembrado não
+            apenas
+            como uma antiga fábrica, mas como parte importante da história de desenvolvimento de Rio Preto.
+        </p>
+
+        <p>
+            Atualmente, o Complexo Swift é associado à educação, cultura, arte e convivência. O espaço recebe eventos,
+            atividades culturais, apresentações, exposições e ações educativas. Ao visitar ou observar a Swift, é
+            possível
+            perceber como um prédio histórico pode ganhar novos usos e continuar fazendo parte da vida da população.
+        </p>
+        <p class="topo">
+            <a class="topo_link" href="#topo">Voltar ao Topo</a>
+        </p>
+    </div>
+    <p style="text-align: center; font-size: 10px; margin-bottom: 20px;">
+        Feito com amor &hearts; | Profª Martinha 2026 &reg; | @martinha.ti
+    </p>
+</body>
+
+</html>

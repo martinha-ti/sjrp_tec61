@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0 auto;
+            /*centralizar para responsividade - posicionamento relativo*/
+            padding: 0;
+            box-sizing: border-box;
+            /* não deixa o elemento sair do lugar, ele fixa o tamanho da caixa - exemplos que vimos de border, margin e padding aumentando as dimensões do elemento*/
+        }
+
+        .main {
+            width: 60%;
+            /* height: 600px; */
+            /* background-color: #ffe4c4; */
+            position: relative;
+            border-radius: 20px;
+            border: 1px dashed #1e1e1e;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px #1e1e1e;
+            margin-bottom: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        h1,
+        h2,
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 30px;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        a {
+            color: #1e1e1e;
+        }
+
+        .topo {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            border: 1px solid #1e1e1e;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+        }
+
+        .topo_link {
+            color: #f7f7f7;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .explorar {
+            color: #1e1e1e;
+            text-decoration: none;
+        }
+
+        hr {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo" class="main">
+        <p>
+            <a class="explorar" href="index.html">Voltar a Home...</a>
+        </p>
+
+        <h1>Parque da Represa Municipal</h1>
+        <h2>O cartão-postal verde e azul de São José do Rio Preto.</h2>
+        <p>A imagem destaca a Represa Municipal com sua paisagem ampla, arborizada e urbana ao fundo, representando um
+            dos espaços mais conhecidos da cidade para lazer, caminhada, contemplação e contato com a natureza.</p>
+        <p><img src="img/2.png" alt="S J Rio Preto"></p>
+        <hr>
+        <!-- TEXTO 2 - PARQUE DA REPRESA MUNICIPAL -->
+
+
+        <p>
+            O Parque da Represa Municipal é um dos lugares mais conhecidos de São José do Rio Preto e está diretamente
+            ligado
+            à história do crescimento da cidade. A represa surgiu a partir da necessidade de armazenar água e contribuir
+            para
+            o abastecimento do município. Com o tempo, além de sua importância para a infraestrutura urbana, o local
+            também
+            passou a ser valorizado como área de lazer e contato com a natureza.
+        </p>
+
+        <p>
+            A paisagem formada pela água, pelas árvores, pelas pistas de caminhada e pelos espaços de convivência tornou
+            a
+            Represa Municipal um dos principais cartões-postais da cidade. O parque passou a ser frequentado por
+            famílias,
+            estudantes, turistas e moradores que buscam descanso, caminhada, contemplação e atividades ao ar livre.
+            Assim,
+            o espaço une natureza, urbanização e qualidade de vida.
+        </p>
+
+        <p>
+            Além da beleza visual, a Represa Municipal também possui importância ambiental. Sua área abriga diferentes
+            espécies
+            de plantas, aves, peixes e outros animais, formando um ecossistema urbano que precisa ser cuidado e
+            preservado.
+            Por isso, o local pode ser estudado não apenas como ponto turístico, mas também como exemplo de educação
+            ambiental
+            e valorização dos espaços públicos.
+        </p>
+        <p class="topo">
+            <a class="topo_link" href="#topo">Voltar ao Topo</a>
+        </p>
+    </div>
+    <p style="text-align: center; font-size: 10px; margin-bottom: 20px;">
+        Feito com amor &hearts; | Profª Martinha 2026 &reg; | @martinha.ti
+    </p>
+</body>
+
+</html>

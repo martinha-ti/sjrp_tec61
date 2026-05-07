@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0 auto;
+            /*centralizar para responsividade - posicionamento relativo*/
+            padding: 0;
+            box-sizing: border-box;
+            /* não deixa o elemento sair do lugar, ele fixa o tamanho da caixa - exemplos que vimos de border, margin e padding aumentando as dimensões do elemento*/
+        }
+
+        .main {
+            width: 60%;
+            /* height: 600px; */
+            /* background-color: #ffe4c4; */
+            position: relative;
+            border-radius: 20px;
+            border: 1px dashed #1e1e1e;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px #1e1e1e;
+            margin-bottom: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        h1,
+        h2,
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 30px;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        a {
+            color: #1e1e1e;
+        }
+
+        .topo {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            border: 1px solid #1e1e1e;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+        }
+
+        .topo_link {
+            color: #f7f7f7;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .explorar {
+            color: #1e1e1e;
+            text-decoration: none;
+        }
+
+        hr {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo" class="main">
+        <p>
+            <a class="explorar" href="index.html">Voltar a Home...</a>
+        </p>
+
+        <h1>Catedral de São José</h1>
+        <h2>Tradição, fé e identidade no centro da cidade.</h2>
+        <p>A imagem mostra a Catedral de São José em destaque, com sua arquitetura imponente e praça ao redor,
+            representando um marco histórico, religioso e urbano de São José do Rio Preto.</p>
+        <p><img src="img/3.png" alt="S J Rio Preto"></p>
+        <p>
+            <a class="explorar" href="catedral.html">Explorar Mais...</a>
+        </p>
+
+        <hr>
+        <!-- TEXTO 3 - CATEDRAL DE SÃO JOSÉ -->
+
+
+        <p>
+            A Catedral de São José é um dos marcos históricos e religiosos mais importantes de São José do Rio Preto.
+            A história da cidade está ligada à devoção a São José, padroeiro do município, e à formação de uma pequena
+            capela construída pelos primeiros moradores da região. Com o crescimento do povoado, esse espaço religioso
+            passou a ter grande importância para a organização social e cultural da cidade.
+        </p>
+
+        <p>
+            Ao longo dos anos, a antiga capela deu lugar a construções maiores, acompanhando o desenvolvimento urbano de
+            Rio Preto. A Catedral passou a ocupar uma posição de destaque no centro da cidade, tornando-se referência
+            para
+            moradores, visitantes e fiéis. Sua presença na paisagem urbana representa a relação entre fé, memória,
+            arquitetura
+            e identidade local.
+        </p>
+
+        <p>
+            Hoje, a Catedral de São José continua sendo um espaço de celebração, encontro e preservação da história
+            rio-pretense.
+            Além de sua função religiosa, ela também pode ser observada como patrimônio cultural, pois ajuda a contar
+            parte da
+            trajetória da cidade. A praça ao redor, o movimento do centro e a arquitetura do edifício tornam o local um
+            ponto
+            importante para conhecer melhor São José do Rio Preto.
+        </p>
+        <p class="topo">
+            <a class="topo_link" href="#topo">Voltar ao Topo</a>
+        </p>
+    </div>
+    <p style="text-align: center; font-size: 10px; margin-bottom: 20px;">
+        Feito com amor &hearts; | Profª Martinha 2026 &reg; | @martinha.ti
+    </p>
+</body>
+
+</html>
